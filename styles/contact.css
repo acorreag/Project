@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(209, 200, 188)
+}
+
+legend{
+    font-weight: bold;
+    color: rgb(79, 62, 41);
+    font-size: 16px;
+}
+h2, h3{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(79, 62, 41);
+    font-size: 18px;
+
+}
+address{
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    text-align: left;
+}
+
+#ty{
+   text-align: center; 
+}
+
+fieldset{
+    border-color: rgb(144, 114, 77);
+ padding: 15px;
+}
