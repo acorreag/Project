@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(209, 200, 188)
+}
+
+.row {
+    display: flex;
+ padding-left: 100px;
+ padding-right: 100px;
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 2px;
+  }
+
+  iframe{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+
+  p{
+      text-align: center;
+      display: block;
+  }
+
+  #block{
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: justify;
+}
+
+h1{
+   position: fixed;
+   font-size: 50px;
+   color: brown;
+}
