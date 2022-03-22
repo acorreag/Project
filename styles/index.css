@@ -51,5 +51,31 @@ body{
     font-weight: bold;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  td a{
+      color: black;
+  }
+  
+  tr:nth-child(even) {
+    background-color: white;
+  }
+
 
 
