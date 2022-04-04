@@ -35,19 +35,97 @@
     </p>
 
     <br>
+    <h2 id="ex">Style Examples</h2>
 
     <div class="row">
         <div class="column">
-            <img src="images/11.jpg" alt="Dragon eye" title="Dragon eye" width="100%" height="400">
+            <img src="images/11.jpg"  id="11"  alt="Dragon Eye" title="Dragon eye" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/12.jpg" alt="Lightning Jaguar" title="Lightning Jaguar" width="100%" height="400">
+            <img src="images/12.jpg" id="12" alt="Lightning Jaguar" title="Lightning Jaguar" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/13.jpg" alt="Goose" title="Goose" width="100%" height="400">
+            <img src="images/13.jpg" id="13" alt="Goose Necklace" title="Goose" width="100%" height="400">
         </div>
 
     </div>
 </body>
+
+<!-- <script>
+    function enlarge11() {
+        const image = document.getElementById("11");
+        const head = document.getElementById('11').alt;
+        image.height = image.height * 1.5;
+        image.width = image.width * 1.5;
+        document.getElementById('ex').innerText = head;
+
+
+
+    }
+
+    function enlarge12() {
+        const image = document.getElementById("12");
+        const head = document.getElementById('12').alt;
+        image.height = image.height * 1.5;
+        image.width = image.width * 1.5;
+        document.getElementById('ex').innerText = head;
+
+
+    }
+    function enlarge13() {
+        const image = document.getElementById("13");
+        const head = document.getElementById('13').alt;
+        image.height = image.height * 1.5;
+        image.width = image.width * 1.5;
+        document.getElementById('ex').innerText = head;
+
+
+    }
+
+    function reduce11() {
+        const image = document.getElementById("11");
+        image.height = image.height / 1.5;
+        image.width = image.width / 1.5;
+        document.getElementById('ex').innerText = "Style Examples";
+
+
+    }
+
+    function reduce12() {
+        const image = document.getElementById("12");
+        image.height = image.height / 1.5;
+        image.width = image.width / 1.5;
+        document.getElementById('ex').innerText = "Style Examples";
+
+
+    }
+    function reduce13() {
+        const image = document.getElementById("13");
+        image.height = image.height / 1.5;
+        image.width = image.width / 1.5;
+        document.getElementById('ex').innerText = "Style Examples";
+
+
+    }
+
+    document.getElementById("11").onmouseover = function () {
+        enlarge11();
+    }
+    document.getElementById("12").onmouseover = function () {
+        enlarge12();
+    }
+    document.getElementById("13").onmouseover = function () {
+        enlarge13();
+    }
+    document.getElementById("11").onmouseout = function () {
+        reduce11();
+    }
+    document.getElementById("12").onmouseout = function () {
+        reduce12();
+    }
+    document.getElementById("13").onmouseout = function () {
+        reduce13();
+    }
+</script> -->
 
 </html>

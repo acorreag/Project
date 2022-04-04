@@ -1,94 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/contact.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
+
 <body>
-    <script id="replace_with_navbar" src="nav.js"></script>
-<br>
-    <h2>Give Us Your Feedback</h2>
-    <h3>
-        Let us know what you think and we'll get back to you in 48 hours.
-    </h3>
-    <br>
-    <div id="ty">
-  <form method="post" action="https://oim-apis.herokuapp.com/form">
-    <fieldset id="info">
-      <legend>Your Information:</legend>
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="fullname"
-        placeholder="Enter your name here"
-      />
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <br>
+  <h2>Give Us Your Feedback</h2>
+  <h3>
+    Let us know what you think and we'll get back to you in 48 hours.
+  </h3>
+  <br>
 
-      <div>
-        <label for="email">Email:</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Enter your email here"
-        />
-      </div>
-    </fieldset>
-<br>
-    <fieldset>
-      <legend>Your Review:</legend>
-      <div>
-        <label for="style">Which tattoo style did you like the most?</label>
-        <select name="product" id="product">
-          <option value="">Please select the style</option>
-          <option value="oldschool">Old School</option>
-          <option value="neotrad">
-            Neotraditional
-          </option>
-          <option value="realism">Realism</option>
-          <option value="surrealism">Surrealism</option>
-        </select>
-      </div>
-      <br />
-      
-      <label for="tatcomments">What other tattoo styles would you like to see on our site?</label>
-      <div>
-        <textarea name="tatcomments" id="tatcomments" cols="65" rows="5"></textarea>
-      </div>
+  <div id="ty">
+    <form action="">
+      <!-- <form method="post" action="https://oim-apis.herokuapp.com/form"> -->
 
-      <label for="comments">What other comments do you have?</label>
-      <div>
-        <textarea name="comments" id="comments" cols="65" rows="5"></textarea>
-      </div>
+      <fieldset id="info">
+        <legend>Your Information:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="Enter your name here" />
 
-      <div>
-        <input
-          type="checkbox"
-          id="updates"
-          name="updates"
-          value="updates"
-          checked
-        />
-        <label for="updates">Sign me up for email updates</label>
-      </div>
-      <div>
-        <input type="submit" value="Submit" id="sub" />
-        <input type="reset" name="Reset" id="reset" />
-      </div>
-    </fieldset>
-  </form></div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email here" />
+        </div>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Your Review:</legend>
+        <div>
+          <label for="style">Which tattoo style did you like the most?</label>
+          <select name="product" id="product">
+            <option value="">Please select the style</option>
+            <option value="oldschool">Old School</option>
+            <option value="neotrad">
+              Neotraditional
+            </option>
+            <option value="realism">Realism</option>
+            <option value="surrealism">Surrealism</option>
+          </select>
+        </div>
+        <br />
+
+        <label for="tatcomments">What other tattoo styles would you like to see on our site?</label>
+        <div>
+          <textarea name="tatcomments" id="tatcomments" cols="65" rows="5"></textarea>
+        </div>
+
+        <label for="comments">What other comments do you have?</label>
+        <div>
+          <textarea name="comments" id="comments" cols="65" rows="5"></textarea>
+        </div>
+
+        <div>
+          <input type="checkbox" id="updates" name="updates" value="updates" checked />
+          <label for="updates">Sign me up for email updates</label>
+        </div>
+        <div>
+          <input type="submit" value="Submit" id="sub" />
+          <input type="reset" name="Reset" id="reset" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
 
   <address>
-      You can contact the author directly via <a href="mailto:acorreagarcia1@babson.edu">email.</a>
-      <br>
-      You may also want to visit us at: <br>
-      Babson College <br>
-      231 Forest Street <br>
-      Babson Park, MA 02457 <br>
-      USA
+    You can contact the author directly via <a href="mailto:acorreagarcia1@babson.edu">email.</a>
+    <br>
+    You may also want to visit us at: <br>
+    Babson College <br>
+    231 Forest Street <br>
+    Babson Park, MA 02457 <br>
+    USA
   </address>
+
+
+  <script>
+    function submit() {
+      let comments = document.getElementById("comments").value;
+      let tatcom = document.getElementById("tatcomments").value;
+      let name = document.getElementById("name").value
+      let email = document.getElementById("email").value
+      let product = document.getElementById("product").value
+
+      console.log("starting")
+
+
+      if (name == "" && email == "") {
+        alert("Please enter your full name and email");
+        return false;
+      }
+
+      else if (product == "") {
+        alert("Please select a tattoo style")
+        return false;
+      }
+
+      else if (comments.length < 5) {
+        alert("Say more! Please enter a comment.");
+        return false;
+      }
+
+      else if (tatcom.length < 5) {
+        alert("Say more! Please enter a comment.");
+        return false;
+      }
+
+    }
+
+    document.getElementById("sub").onclick = function () {
+      submit()
+    };
+
+  </script>
+
+
 </body>
+
 </html>

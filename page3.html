@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realism</title>
-    <link rel="stylesheet" href="styles/page3.css">
+    <link rel="stylesheet" href="styles/page1.css">
 </head>
 
 <body>
@@ -14,8 +14,9 @@
 
     <br>
     <h1>REALISM</h1>
-    <p> <iframe width="700" height="350" src="https://www.youtube.com/embed/VUawTc053Ms" title="YouTube video player"
-            frameborder="0"
+
+    <p> <iframe id="14" width="700" height="350" src="https://www.youtube.com/embed/VUawTc053Ms"
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
@@ -53,16 +54,79 @@
 
     <div class="row">
         <div class="column">
-            <img src="images/14.jpg" alt="Asian girl" title="Asian girl" width="100%" height="400">
+            <img src="images/14.jpg" id="not14" alt="Asian girl" title="Asian girl" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/15.jpg" alt="Cali girl" title="Cali Girl" width="100%" height="400">
+            <img src="images/15.jpg" id="15" alt="Cali girl" title="Cali Girl" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/realism.jpg" alt="Roman face" title="Roman face" width="100%" height="400">
+            <img src="images/realism.jpg" id="18" alt="Roman face" title="Roman face" width="100%" height="400">
         </div>
 
     </div>
+
+
+    <script>
+        function enlarge14() {
+            const image = document.getElementById("14");
+            image.height = image.height * 1.5;
+            image.width = image.width * 1.5;
+
+        }
+
+        // function enlarge15() {
+        //     const image = document.getElementById("15");
+        //     image.height = image.height * 1.5;
+        //     image.width = image.width * 1.5;
+
+        // }
+        // function enlarge18() {
+        //     const image = document.getElementById("18");
+        //     image.height = image.height * 1.5;
+        //     image.width = image.width * 1.5;
+
+        // }
+
+        function reduce14() {
+            const image = document.getElementById("14");
+            image.height = image.height / 1.5;
+            image.width = image.width / 1.5;
+
+        }
+
+        // function reduce15() {
+        //     const image = document.getElementById("15");
+        //     image.height = image.height / 1.5;
+        //     image.width = image.width / 1.5;
+
+        // }
+        // function reduce18() {
+        //     const image = document.getElementById("18");
+        //     image.height = image.height / 1.5;
+        //     image.width = image.width / 1.5;
+
+        // }
+
+        document.getElementById("14").onmouseover = function () {
+            enlarge14();
+        }
+        // document.getElementById("15").onmouseover = function () {
+        //     enlarge15();
+        // }
+        // document.getElementById("18").onmouseover = function () {
+        //     enlarge18();
+        // }
+        document.getElementById("14").onmouseout = function () {
+            reduce14();
+        }
+        // document.getElementById("15").onmouseout = function () {
+        //     reduce15();
+        // }
+        // document.getElementById("18").onmouseout = function () {
+        //     reduce18();
+        // }
+
+    </script>
 </body>
 
 </html>

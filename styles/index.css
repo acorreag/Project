@@ -77,5 +77,16 @@ h3{
     background-color: white;
   }
 
+  button{
+    background-color: inherit;
+    color: inherit;
+    /* text-align: right;
+   float: right; */
+   padding: 5px;
+   display: inline-block;
+   text-align: center;
+  
+}
+
 
 
