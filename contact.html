@@ -81,6 +81,7 @@
     USA
   </address>
 
+  <img src="images/1.jpg"  id="rosepic"  alt="Bird and Rose" title="Bird and Rose" width="400" height="400">
 
   <script>
     function submit() {
@@ -118,6 +119,24 @@
     document.getElementById("sub").onclick = function () {
       submit()
     };
+
+
+    const slides = ["images/1.jpg", "images/5.jpg", "images/6.jpg", "images/8.jpg", "images/11.jpg", "images/19.jpg",  "images/12.jpg",  "images/13.jpg"  ];
+let i= 0
+
+    function slideshow(){
+      if (i == slides.length) {
+                i = 0;
+            }
+            document.querySelector("img").src = slides[i];
+            i++;
+
+            setTimeout(slideshow, 1000);
+            console.log("next picture")
+    }
+
+    document.querySelector("body").onload = slideshow
+
 
   </script>
 

@@ -31,3 +31,10 @@ fieldset{
     border-color: rgb(144, 114, 77);
  padding: 15px;
 }
+
+#rosepic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}

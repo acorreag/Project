@@ -51,16 +51,16 @@
     </p>
 
     <br>
-
+    <h2 id="ex">Style Examples</h2>
     <div class="row">
         <div class="column">
-            <img src="images/14.jpg" id="not14" alt="Asian girl" title="Asian girl" width="100%" height="400">
+            <img src="images/14.jpg" id="not14" alt="Water Girl" title="Asian girl" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/15.jpg" id="15" alt="Cali girl" title="Cali Girl" width="100%" height="400">
+            <img src="images/15.jpg" id="15" alt="Cali Girl" title="Cali Girl" width="100%" height="400">
         </div>
         <div class="column">
-            <img src="images/realism.jpg" id="18" alt="Roman face" title="Roman face" width="100%" height="400">
+            <img src="images/realism.jpg" id="18" alt="Roman God" title="Roman face" width="100%" height="400">
         </div>
 
     </div>
@@ -68,63 +68,72 @@
 
     <script>
         function enlarge14() {
-            const image = document.getElementById("14");
+            const image = document.getElementById("not14");
+            const head = document.getElementById('not14').alt;
             image.height = image.height * 1.5;
             image.width = image.width * 1.5;
+            document.getElementById('ex').innerText = head;
 
         }
 
-        // function enlarge15() {
-        //     const image = document.getElementById("15");
-        //     image.height = image.height * 1.5;
-        //     image.width = image.width * 1.5;
+        function enlarge15() {
+            const image = document.getElementById("15");
+            const head = document.getElementById('15').alt;
+            image.height = image.height * 1.5;
+            image.width = image.width * 1.5;
+            document.getElementById('ex').innerText = head;
 
-        // }
-        // function enlarge18() {
-        //     const image = document.getElementById("18");
-        //     image.height = image.height * 1.5;
-        //     image.width = image.width * 1.5;
+        }
+        function enlarge18() {
+            const image = document.getElementById("18");
+            const head = document.getElementById('18').alt;
+            image.height = image.height * 1.5;
+            image.width = image.width * 1.5;
+            document.getElementById('ex').innerText = head;
 
-        // }
+        }
 
         function reduce14() {
-            const image = document.getElementById("14");
+            const image = document.getElementById("not14");
             image.height = image.height / 1.5;
             image.width = image.width / 1.5;
+            document.getElementById('ex').innerText = "Style Examples";
 
         }
 
-        // function reduce15() {
-        //     const image = document.getElementById("15");
-        //     image.height = image.height / 1.5;
-        //     image.width = image.width / 1.5;
+        function reduce15() {
+            const image = document.getElementById("15");
+            image.height = image.height / 1.5;
+            image.width = image.width / 1.5;
+            document.getElementById('ex').innerText = "Style Examples";
 
-        // }
-        // function reduce18() {
-        //     const image = document.getElementById("18");
-        //     image.height = image.height / 1.5;
-        //     image.width = image.width / 1.5;
+        }
+        function reduce18() {
+            const image = document.getElementById("18");
+            image.height = image.height / 1.5;
+            image.width = image.width / 1.5;
+            document.getElementById('ex').innerText = "Style Examples";
 
-        // }
+        }
 
-        document.getElementById("14").onmouseover = function () {
+        document.getElementById("not14").onmouseover = function () {
             enlarge14();
         }
-        // document.getElementById("15").onmouseover = function () {
-        //     enlarge15();
-        // }
-        // document.getElementById("18").onmouseover = function () {
-        //     enlarge18();
-        // }
-        document.getElementById("14").onmouseout = function () {
+        document.getElementById("15").onmouseover = function () {
+            enlarge15();
+        }
+        document.getElementById("18").onmouseover = function () {
+            enlarge18();
+        }
+        document.getElementById("not14").onmouseout = function () {
             reduce14();
         }
-        // document.getElementById("15").onmouseout = function () {
-        //     reduce15();
-        // }
-        // document.getElementById("18").onmouseout = function () {
-        //     reduce18();
-        // }
+        document.getElementById("15").onmouseout = function () {
+            reduce15();
+        }
+        document.getElementById("18").onmouseout = function () {
+            reduce18();
+        }
 
     </script>
 </body>
