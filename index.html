@@ -22,9 +22,16 @@
 </head>
 
 <body>
+
+    <!-- This is the first mobile compatible page  -->
     <script id="replace_with_navbar" src="nav.js"></script>
     <div id="firstpic1">
-        <img id="firstpic" src="images/first.gif" alt="tat-gif" title="tat-gif">
+
+        <picture>
+            <source srcset="images/mobile-tattoo.gif" media="(max-width: 680px)">
+            <source srcset="images/first.gif">
+            <img id="firstpic" src="images/first.gif" alt="tat-gif" title="tat-gif">
+        </picture>
     </div>
     <hr>
     <br>

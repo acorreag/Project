@@ -72,7 +72,7 @@ h4 a:visited {
   .navlinks {
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 96vh;
     top: 8vh;
     background-color: rgb(111, 88, 58);
     display: flex;
