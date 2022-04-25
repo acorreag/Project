@@ -51,6 +51,28 @@ image{
     font-size: 30px;
 }
 
-
+@media screen and (max-width: 680px) {
+    #iframe{
+        margin: 0%;
+        display: none;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   #block{
+       text-align: left;
+       text-align:justify;
+       margin-left: 0%;
+     width: 350px;
+   }
+   h1{
+       position: relative;
+   }
+ 
+    }
   
   
