@@ -67,10 +67,11 @@ image{
        text-align: left;
        text-align:justify;
        margin-left: 0%;
-     width: 350px;
+     width: 300px;
    }
    h1{
        position: relative;
+       font-size: 35px;
    }
  
     }
